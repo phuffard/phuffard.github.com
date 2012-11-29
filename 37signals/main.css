@@ -30,6 +30,7 @@ div {
 }
 
 .date {
+	display: inline;
 	float: left;
 	color: #999;
 }
