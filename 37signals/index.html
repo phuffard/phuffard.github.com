@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
     	<title>37signals: Web-based collaboration apps for small business</title>
 		<meta name="author" content="Peter Tufo" />
 		<link rel="stylesheet" href="main.css" type="text/css" />
@@ -9,7 +8,12 @@
 	<body>
 		<div id="nav">
 			<ul>
-				<li class="nav_left">Happy Wednesday</li> 
+				<li class="date">
+					<script type="text/javascript">
+						var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+      					var now = new Date();document.write("Happy " + dayNames[now.getDay()] + ".");
+ 					</script>
+ 				</li> 
 				<li><a href="https://launchpad.37signals.com/" class="nav_right baby_blue">Sign in</a></li>
 				<li><a href="http://status.37signals.com/" class="nav_right">System status</a></li>
 				<li><a href="http://twitter.com/37signals" class="nav_right">Follow us on Twitter</a></li>
@@ -18,11 +22,27 @@
 			</ul>
 		</div> <!-- Nav -->
 		<div id="container">
-			<div id="Sub_Container_1"> <!-- Currently there is no CSS for this DIV -->
+			<div id="Sub_Container_1">
 				<img src="assets/logo-37s-large.png" alt="37Signals Logo" class="center">
 				<h1>Making collaboration productive and enjoyable for people everyday.</h1>
 				<h3>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h3>
-				<img src="assets/hover_icons_cheat.png">
+				<div id="company_group">
+					<a href="#" class="app"><img class="company_logos" src="assets/logo-bc.png">
+						<h3 class="company">Basecamp</h3><!-- <sup>®</sup> -->
+						<h4 class="service">Manage Products</h4>
+						<p class="service_description">Used by millions for project management.</p>
+					</a>
+					<a href="#" class="app"><img class="company_logos" src="assets/logo-hr.png">
+						<h3 class="company">Highrise</h3> <!-- <sup>®</sup> -->
+						<h4 class="service">Manage Contacts</h4>
+						<p class="service_description">Know the people you do business with.</p>
+					</a>
+					<a href="#" class="app"><img class="company_logos" src="assets/logo-cf.png">
+						<h3 class="company">Campfire</h3><!-- <sup>TM</sup> -->
+						<h4 class="service">Work in Real-Time</h4>
+						<p class="service_description">Group chat rooms for your business.</p>
+					</a>
+				</div> <!-- company_group -->
 				<img src="assets/stars.png" class="stars">
 			</div> <!-- Sub_Container_1 -->
 			<div id="sub_container_2">
@@ -86,9 +106,9 @@
 						<p>No one likes being locked into something they don't want anymore. Our customers can cancel at any time, no questions asked. No setup/termination fees either.</p>
 					</div> <!-- Fourth -->
 				</div> <!-- Right_Col -->
+				<img src="assets/stars.png" class="stars">
 			</div> <!-- Sub_Container_3 -->
 			<div id="sub_container_4">
-				<img src="assets/stars.png" class="stars">
 				<div id="photo_join2"> 
 					<h2>Our book REWORK is a fresh approach to running a business. It's a <em>New York Times</em><br>and <em>Wall Street Journal</em> bestseller.</h2> <!-- Can't get EM to work here?? -->
 					<img id="pics2" src="assets/img-crumple.png">
@@ -106,52 +126,52 @@
 			<div id="sub_container_5">
 				<img src="assets/stars.png" class="stars">
 				<h2>Here's everything we offer, soup to nuts.</h2>
-				<div id="company_group">
-					<a href="#" class="app"><img class="company_logos" src="assets/logo-bc.png">
-						<h3 class="company">Basecamp</h3><!-- <sup>®</sup> -->
+				<div id="company_group_bottom">
+					<a href="#" class="app_bottom"><img class="company_logos_bottom" src="assets/logo-bc.png">
+						<h3 class="company_bottom">Basecamp</h3><!-- <sup>®</sup> -->
 						<h4 class="service">Manage Products</h4>
-						<p class="service_description">As easy as email, just way more powerful.</p>
+						<p class="service_description_bottom">As easy as email, just way more powerful.</p>
 					</a>
-					<a href="#" class="app"><img class="company_logos" src="assets/logo-hr.png">
-						<h3 class="company">Highrise</h3> <!-- <sup>®</sup> -->
+					<a href="#" class="app_bottom"><img class="company_logos_bottom" src="assets/logo-hr.png">
+						<h3 class="company_bottom">Highrise</h3> <!-- <sup>®</sup> -->
 						<h4 class="service">Manage Contacts</h4>
-						<p class="service_description">Over 20,000,000 contacts managed with Highrise.</p>
+						<p class="service_description_bottom">Over 20,000,000 contacts managed with Highrise.</p>
 					</a>
-					<a href="#" class="app"><img class="company_logos" src="assets/logo-cf.png">
-						<h3 class="company">Campfire</h3><!-- <sup>TM</sup> -->
+					<a href="#" class="app_bottom"><img class="company_logos_bottom" src="assets/logo-cf.png">
+						<h3 class="company_bottom">Campfire</h3><!-- <sup>TM</sup> -->
 						<h4 class="service">Work in Real-Time</h4>
-						<p class="service_description">Private group chat rooms for your business.</p>
+						<p class="service_description_bottom">Private group chat rooms for your business.</p>
 					</a>
-				</div> 
+				</div> <!-- company_group -->
 			</div><!-- Sub_Container_5 -->
 			<div id="sub_container_6">
 				<div class="resource_box_left">
-					<h4 class="service"> Our services</h4><!-- need to rename these classes -->
-					<h3 class="company border_top">The Job Board</h3> <!-- need to rename these classes -->
-					<p class="service_description">Find (or post) a programming or design job.</p>
-					<h3 class="company">37signals Speaks</h3> <!-- need to rename these classes -->
-					<p class="service_description">Videos of our keynotes and interviews.</p>
+					<h4 class="service"> Our services</h4>
+					<h3 class="company_bottom border_top">The Job Board</h3> 
+					<p class="service_description_bottom">Find (or post) a programming or design job.</p>
+					<h3 class="company_bottom">37signals Speaks</h3> 
+					<p class="service_description_bottom">Videos of our keynotes and interviews.</p>
 				</div> 	
 				<div class="resource_box_right">
-					<h4 class="service"> Our Books</h4><!-- need to rename these classes -->
-					<h3 class="company border_top">REWORK</h3> <!-- need to rename these classes -->
-					<p class="service_description">Our take on building a great business</p>
-					<h3 class="company">Getting Real</h3> <!-- need to rename these classes -->
-					<p class="service_description">Learn how to build software the easy way.</p>
+					<h4 class="service"> Our Books</h4>
+					<h3 class="company_bottom border_top">REWORK</h3> 
+					<p class="service_description_bottom">Our take on building a great business</p>
+					<h3 class="company_bottom">Getting Real</h3> 
+					<p class="service_description_bottom">Learn how to build software the easy way.</p>
 				</div>
 				<div class="resource_box_left">
-					<h4 class="service">Feature stories</h4><!-- need to rename these classes -->
-					<h3 class="company border_top">Bootstrapped & Proud</h3> <!-- need to rename these classes -->
-					<p class="service_description">We profile successful small businesses.</p>
-					<h3 class="company">Exit Interviews</h3> <!-- need to rename these classes -->
-					<p class="service_description">Interviews with companies post-acquistion.</p>
+					<h4 class="service">Feature stories</h4>
+					<h3 class="company_bottom border_top">Bootstrapped & Proud</h3> 
+					<p class="service_description_bottom">We profile successful small businesses.</p>
+					<h3 class="company_bottom">Exit Interviews</h3> 
+					<p class="service_description_bottom">Interviews with companies post-acquistion.</p>
 				</div>
 				<div class="resource_box_right">
-					<h4 class="service"> Our open-source contributions</h4><!-- need to rename these classes -->
-					<h3 class="company border_top">Ruby on Rails</h3> <!-- need to rename these classes -->
-					<p class="service_description">A powerful & simple web app framework</p>
-					<h3 class="company">Open Source</h3> <!-- need to rename these classes -->
-					<p class="service_description">A list of projects we-ve released & contributed to.</p>
+					<h4 class="service"> Our open-source contributions</h4>
+					<h3 class="company_bottom border_top">Ruby on Rails</h3> 
+					<p class="service_description_bottom">A powerful & simple web app framework</p>
+					<h3 class="company_bottom">Open Source</h3> 
+					<p class="service_description_bottom">A list of projects we-ve released & contributed to.</p>
 				</div>
 			</div> <!-- sub_container_6 -->	
 			<div id="sub_container_7">
@@ -173,8 +193,6 @@
 				</ul>
 			</div> <!-- Footer -->
 		</div> <!-- Container -->
-
-
 	</body>
 </html>
 
